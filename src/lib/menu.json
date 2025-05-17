@@ -1,2 +1,133 @@
 {
-}
+    "categories": [
+      {
+        "name": "Espresso",
+        "items": [
+          {
+            "name": "Americano",
+            "description": "Espresso, water",
+            "prices": [3.00, 3.50, 3.75]
+          },
+          {
+            "name": "Latte",
+            "description": "Espresso, milk",
+            "prices": [4.00, 4.25, 4.75]
+          },
+          {
+            "name": "Cappuccino",
+            "description": "Espresso, milk, foam",
+            "prices": [3.75, 4.00, 4.25]
+          },
+          {
+            "name": "Flat White",
+            "description": "Espresso, milk, microfoam",
+            "prices": [3.75]
+          },
+          {
+            "name": "Cortado",
+            "description": "Espresso, equal part milk",
+            "prices": [3.50]
+          }
+        ]
+      },
+      {
+        "name": "Specialties",
+        "items": [
+          {
+            "name": "Honeypot Latte",
+            "description": "Cinnamon, honey, vanilla"
+          },
+          {
+            "name": "Benny’s Best",
+            "description": "Almond, coconut, mocha latte"
+          },
+          {
+            "name": "Drink Responsibly",
+            "description": "Vanilla, caramel, oat milk shaken espresso"
+          },
+          {
+            "name": "Love at First Serve",
+            "description": "White mocha, raspberry latte"
+          }
+        ]
+      },
+      {
+        "name": "Cold Brew & Nitro",
+        "items": [
+          {
+            "name": "Cold Brew",
+            "sizes": {
+              "16oz": 4.50,
+              "24oz": 5.00
+            }
+          },
+          {
+            "name": "Nitro",
+            "sizes": {
+              "16oz": 5.50,
+              "24oz": 6.25
+            }
+          }
+        ]
+      },
+      {
+        "name": "Smoothies",
+        "basePrices": {
+          "16oz": 7.00,
+          "24oz": 9.00
+        },
+        "items": [
+          {
+            "name": "Straw Nana",
+            "description": "Strawberry, banana, almond milk"
+          },
+          {
+            "name": "Berry Blast",
+            "description": "Strawberry, blueberry, raspberry, almond milk"
+          },
+          {
+            "name": "Mighty Mango",
+            "description": "Mango, pineapple, banana, almond milk"
+          }
+        ],
+        "addIns": [
+          { "name": "Protein",        "price": 0.75 },
+          { "name": "Peanut Butter",  "price": 0.50 },
+          { "name": "Matcha",         "price": 0.75 }
+        ]
+      },
+      {
+        "name": "Flavors",
+        "price": 0.50,
+        "items": [
+          "Vanilla",
+          "Caramel",
+          "Coconut",
+          "Almond",
+          "Raspberry",
+          "Brown Sugar Cinnamon",
+          "SF Vanilla",
+          "Honey",
+          "Mocha",
+          "White Mocha",
+          "Maple"
+        ]
+      },
+      {
+        "name": "Teas",
+        "items": [
+          {
+            "name": "Matcha",
+            "options": ["Latte", "Tea"]
+          },
+          { "name": "Iced Black Tea" },
+          { "name": "Hot Tea" }
+        ]
+      },
+      {
+        "name": "Milk",
+        "items": ["Whole", "Almond", "Oat"]
+      }
+    ]
+  }
+  
