@@ -1,14 +1,16 @@
 :root {
-  --primary: #795548;
+  --primary: #4B2E2D;
   --primary-dark: #5d4037;
-  --primary-light: #a1887f;
-  --accent: #ff9800;
+  --primary-dark-filter: invert(23%) sepia(10%) saturate(1305%) hue-rotate(345deg) brightness(93%) contrast(92%);
+  --primary-light: #C6D3B4;
+  --accent: #E4C97A;
   --text: #263238;
   --text-light: #78909c;
   --background: #f5f5f5;
   --white: #ffffff;
   --section-padding: 4rem 2rem;
   --max-width: 1200px;
+  --header-height: 70px;
 }
 
 * {
@@ -19,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {

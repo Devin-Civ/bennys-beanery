@@ -1,0 +1,77 @@
+<script lang="ts">
+  // Props can be added here if needed
+  export let title = "Benny's Beanery";
+  export let buttonText = "Explore Our Menu";
+  export let buttonLink = "#menu";
+</script>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="/src/assets/benny.svg" alt="Benny's Beanery Logo" class="logo" />
+    <h1>{title}</h1>
+    <a href={buttonLink} class="btn">{buttonText}</a>
+  </div>
+</section>
+
+<style>
+  /* Hero Section */
+  .hero {
+    height: 80vh; /* Reduced from 100vh to make it smaller */
+    background-image: url("/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    color: var(--primary-dark);
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+    filter: var(--primary-dark-filter, brightness(0) saturate(100%));
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-dark);
+    font-family: "Poetsen One", cursive;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    outline: 3px solid var(--primary-dark);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      height: 60vh; /* Smaller on mobile */
+    }
+
+    .logo {
+      width: 120px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>
