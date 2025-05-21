@@ -1,14 +1,14 @@
 <script lang="ts">
   // Props can be added here if needed
   export let title = "Benny's Beanery";
-  export let buttonText = "Explore Our Menu";
+  export let buttonText = "Order Now";
   export let buttonLink = "#menu";
 </script>
 
 <section id="home" class="hero">
   <div class="hero-content">
-    <img src="/src/assets/benny.svg" alt="Benny's Beanery Logo" class="logo" />
     <h1>{title}</h1>
+    <img src="/src/assets/benny.svg" alt="Benny's Beanery Logo" class="logo" />
     <a href={buttonLink} class="btn">{buttonText}</a>
   </div>
 </section>
@@ -29,19 +29,25 @@
 
   .hero-content {
     max-width: 800px;
-    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
 
   .logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     filter: var(--primary-dark-filter, brightness(0) saturate(100%));
   }
 
   .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin: 0;
     color: var(--primary-dark);
     font-family: "Poetsen One", cursive;
   }
@@ -63,15 +69,20 @@
   /* Responsive Styles */
   @media (max-width: 768px) {
     .hero {
-      height: 60vh; /* Smaller on mobile */
+      height: 70vh; /* Smaller on mobile */
+    }
+
+    .hero-content {
+      gap: 1.5rem;
     }
 
     .logo {
-      width: 120px;
+      width: 150px;
     }
 
     .hero h1 {
       font-size: 2.5rem;
+      max-width: 300px;
     }
   }
 </style>
