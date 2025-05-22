@@ -74,7 +74,11 @@
   .doordash-icon {
     width: 24px;
     height: 24px;
-    filter: brightness(0) saturate(100%);
+    filter: var(
+      --primary-dark-filter,
+      invert(23%) sepia(10%) saturate(1305%) hue-rotate(345deg) brightness(93%)
+        contrast(92%)
+    );
   }
 
   .btn:hover {

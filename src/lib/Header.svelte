@@ -53,7 +53,7 @@
   nav ul {
     display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     height: 100%;

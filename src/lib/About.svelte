@@ -1,21 +1,18 @@
 <script lang="ts">
   import blairImage from "../assets/blair.JPEG";
-
-  export let ownerName = "Blair";
 </script>
 
 <section id="about" class="about-section">
   <div class="container">
     <div class="section-title">
-      <h2>Our Story</h2>
+      <h2>About Us</h2>
     </div>
 
     <div class="about-container">
       <div class="about-image">
-        <img src={blairImage} alt="{ownerName}, Owner of Benny's Beanery" />
+        <img src={blairImage} alt="Blair, Owner of Benny's Beanery" />
       </div>
       <div class="about-content">
-        <h3>Meet {ownerName}</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           vehicula, urna eu facilisis fermentum, justo libero tincidunt arcu,
@@ -25,10 +22,6 @@
           Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
           Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis
           porttitor volutpat.
-        </p>
-        <p>
-          Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia
-          eget consectetur sed, convallis at tellus.
         </p>
       </div>
     </div>
