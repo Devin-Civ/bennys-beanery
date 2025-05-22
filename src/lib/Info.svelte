@@ -1,5 +1,9 @@
 <script lang="ts">
   import InfoCard from "./InfoCard.svelte";
+  import clockIcon from "../assets/clock-icon.svg";
+  import locationIcon from "../assets/location-icon.svg";
+  import contactIcon from "../assets/contact-icon.svg";
+  import instagramIcon from "../assets/instagram-icon.svg";
 </script>
 
 <section id="info" class="info-section">
@@ -9,35 +13,36 @@
     </div>
 
     <div class="info-container">
-      <InfoCard title="Hours" iconClass="hours-icon">
+      <InfoCard title="Hours" iconSrc={clockIcon}>
         <ul class="hours-list">
-          <li><span>Monday - Friday:</span> 6am - 7pm</li>
-          <li><span>Saturday:</span> 7am - 7pm</li>
-          <li><span>Sunday:</span> 8am - 6pm</li>
+          <li><span>Monday:</span> 9am - 3pm</li>
+          <li><span>Tuesday:</span> Closed</li>
+          <li><span>Wed - Sunday:</span> 9am - 3pm</li>
         </ul>
       </InfoCard>
 
-      <InfoCard title="Location" iconClass="location-icon">
+      <InfoCard title="Location" iconSrc={locationIcon}>
         <address>
-          123 Coffee Street<br />
-          Beanville, CA 94123
+          1 Valley Street<br />
+          New Haven, CT 06515
         </address>
         <p class="free-parking">Free parking on site!</p>
       </InfoCard>
 
-      <InfoCard title="Contact" iconClass="contact-icon">
-        <p>Phone: (555) 123-4567</p>
-        <p>Email: hello@bennysbeanery.com</p>
+      <InfoCard title="Contact" iconSrc={contactIcon}>
+        <p>
+          Phone: <i style="color: grey">Currently Unavailable</i>
+        </p>
+        <p>Email: blair@bennysbeanery.us</p>
         <div class="social-icons">
-          <a href="https://facebook.com" aria-label="Facebook"
-            ><div class="social-icon facebook"></div></a
+          <a
+            href="https://instagram.com/bennysbeanery"
+            aria-label="Instagram"
+            class="social-link"
           >
-          <a href="https://instagram.com" aria-label="Instagram"
-            ><div class="social-icon instagram"></div></a
-          >
-          <a href="https://twitter.com" aria-label="Twitter"
-            ><div class="social-icon twitter"></div></a
-          >
+            <img src={instagramIcon} alt="Instagram" class="social-icon" />
+            <span>@bennysbeanery</span>
+          </a>
         </div>
       </InfoCard>
     </div>
@@ -76,14 +81,25 @@
   .social-icons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
     margin-top: 1rem;
   }
 
   .social-icon {
-    width: 30px;
-    height: 30px;
-    background-color: var(--primary);
-    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) saturate(100%);
+    margin-right: 8px;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .social-link:hover {
+    color: var(--accent);
   }
 </style>

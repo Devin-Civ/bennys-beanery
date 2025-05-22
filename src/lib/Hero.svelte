@@ -9,7 +9,14 @@
   <div class="hero-content">
     <h1>{title}</h1>
     <img src="/src/assets/benny.svg" alt="Benny's Beanery Logo" class="logo" />
-    <a href={buttonLink} class="btn">{buttonText}</a>
+    <a href={buttonLink} class="btn">
+      <img
+        src="/src/assets/doordash.svg"
+        alt="DoorDash"
+        class="doordash-icon"
+      />
+      {buttonText}
+    </a>
   </div>
 </section>
 
@@ -53,13 +60,21 @@
   }
 
   .btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     background-color: var(--accent);
     color: var(--primary-dark);
     padding: 0.8rem 1.5rem;
     border-radius: 20px;
     font-weight: 600;
     transition: background-color 0.3s ease;
+  }
+
+  .doordash-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) saturate(100%);
   }
 
   .btn:hover {

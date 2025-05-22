@@ -60,7 +60,7 @@
   }
 
   nav a {
-    font-family: "Caveat", cursive;
+    font-family: "Poetsen One", cursive;
     font-weight: 600;
     font-size: 1.4rem;
     transition: color 0.3s ease;

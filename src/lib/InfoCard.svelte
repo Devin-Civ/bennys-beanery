@@ -1,11 +1,11 @@
 <script lang="ts">
   export let title: string;
-  export let iconClass: string = "";
+  export let iconSrc: string = "";
 </script>
 
 <div class="info-card">
   <div class="card-icon">
-    <i class={iconClass}></i>
+    <img src={iconSrc} alt={`${title} icon`} class="icon-img" />
   </div>
   <h3>{title}</h3>
   <slot></slot>
@@ -30,5 +30,11 @@
     background-color: var(--primary-light);
     border-radius: 50%;
     color: white;
+  }
+
+  .icon-img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Makes the icon white */
   }
 </style>
