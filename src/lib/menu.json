@@ -2,6 +2,7 @@
     "categories": [
         {
             "name": "Smoothies",
+            "isExpandable": true,
             "items": [
                 {
                     "name": "Straw Nana",
@@ -122,10 +123,16 @@
                     ]
                 },
                 {
-                    "name": "Cold Brew"
+                    "name": "Cold Brew",
+                    "ingredients": [
+                        "Smooth, low-acid coffee brewed for 16 hours"
+                    ]
                 },
                 {
-                    "name": "Nitro"
+                    "name": "Nitro",
+                    "ingredients": [
+                        "Cold brew infused with nitrogen for a creamy texture"
+                    ]
                 },
                 {
                     "name": "Teas",
