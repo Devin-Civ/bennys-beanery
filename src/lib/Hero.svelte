@@ -1,4 +1,7 @@
 <script lang="ts">
+  import bennyLogo from "../assets/benny.svg";
+  import doordashIcon from "../assets/doordash.svg";
+
   // Props can be added here if needed
   export let title = "Benny's Beanery";
   export let buttonText = "Order Now";
@@ -8,13 +11,9 @@
 <section id="home" class="hero">
   <div class="hero-content">
     <h1>{title}</h1>
-    <img src="/src/assets/benny.svg" alt="Benny's Beanery Logo" class="logo" />
+    <img src={bennyLogo} alt="Benny's Beanery Logo" class="logo" />
     <a href={buttonLink} class="btn">
-      <img
-        src="/src/assets/doordash.svg"
-        alt="DoorDash"
-        class="doordash-icon"
-      />
+      <img src={doordashIcon} alt="DoorDash" class="doordash-icon" />
       {buttonText}
     </a>
   </div>
