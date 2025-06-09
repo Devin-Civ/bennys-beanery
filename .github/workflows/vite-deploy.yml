@@ -4,10 +4,10 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches: ['first-draft']
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
